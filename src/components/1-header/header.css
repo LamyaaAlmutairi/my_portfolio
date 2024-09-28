@@ -1,0 +1,146 @@
+/*content of this styleSheet
+
+---------------------------------
+1-header style
+2-button and its icons
+3-popup list 
+4-nav's links with hover effect
+5-media query (RD)
+*/
+
+header.flex{
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+header.flex nav {
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius:55px ;
+    box-shadow: 1px 1px 2px rgba(112, 112, 112, 0.233);
+    
+}
+
+header .menu {
+    display :none;
+}
+
+
+header ul.flex {
+  gap: 16px;
+}
+
+header ul li a{
+   color: var(--title) ;
+   opacity: 0.9;
+   font-size: 0.88rem;
+   font-weight:500;
+}
+header ul li a:hover{
+    color: var(--hoverC) ;
+    opacity: 1;
+    font-size: 0.9rem;
+    font-weight:500;
+ }
+ 
+
+header button {
+    font-size: 1.2rem;
+
+}
+
+/* pop up menu*/
+header .fixed {
+position: fixed;
+z-index: 100;
+inset: 0;
+background-color: rgba(46, 46, 50, 0.91);
+backdrop-filter: blur(4px);
+
+}
+@keyframes popup {
+    0%   {scale:0;}
+    60%   {scale:1.2;} 
+    100%   {scale:1;}
+}
+
+  
+header .fixed ul.menu-box {
+    animation: popup 0.7s 1; 
+    width:75%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+header .fixed ul.menu-box li{
+    border-bottom:1px solid var(--border) ;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+header .fixed ul.menu-box li a{
+font-size: 1rem;
+}
+
+
+
+header .fixed ul.menu-box li:last-child{
+border: none;
+}
+header .fixed ul.menu-box li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0.2rem;
+    margin-bottom: -1rem;
+    }
+
+header .icon-sun{
+    color:rgba(255, 166, 1, 0.58);
+}
+
+header .icon-menu,header .mode {
+    background-color: var(--bgHeader);
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    text-align: center;
+    color:var(--subtitle);
+    border: 1px solid rgba(244,165,96,0.249);
+    transition: 0.2s;
+    box-shadow: 1px 1px 4px rgba(192, 186, 186, 0.201);
+}
+
+header .icon-menu:hover,header .mode:hover {
+    color:var(--title);
+    border: 1px solid rgb(244, 165, 96);
+
+}
+
+.menu-box .icon-close {
+color:var(--subtitle);
+font-size: 1.2rem;
+transition: 0.2s;
+
+}
+.menu-box .icon-close:hover {
+    color:var(--title);
+    font-size: 1.4rem;
+    rotate:180deg;
+    
+    }
+
+
+
+
+
+
+
+/* Media qeury at the bottom of the file*/
+@media (max-width: 700px) {
+header.flex nav{display: none;}
+header .menu { display :block;}
+  
+}

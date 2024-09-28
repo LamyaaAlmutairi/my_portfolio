@@ -1,0 +1,113 @@
+.contact-container .contact-title .icon-envelope{
+    color:var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.9rem;
+
+}
+.contact-container .contact-title {
+    color:var(--title);
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+
+}
+.contact-container label{
+    color:var(--subtitle);
+
+}
+.contact-container #email, .contact-container #message{
+    all: unset;
+    background-color: rgba(63,63,70,0.15);
+    border : 1px solid rgb(63,63,70);
+    width: 10rem;
+    padding:0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius:5px ;
+    transition: 0.3s;
+    font-size: 1.1rem;
+
+}
+.contact-container #email:focus, .contact-container #message:focus{
+    border: 1px solid rgb(45, 212, 145)
+}
+.contact-container #email:hover, .contact-container #message:hover{
+    border: 1px solid var(--mygreen)
+}
+.contact-container #message{
+    min-height: 9rem;
+    resize: vertical;
+
+}
+
+.contact-container .send{
+    background-color: rgba(36,37,46,1);
+    margin-top: 2rem;
+    padding: 0.7rem 1.9rem;
+    text-align: center;
+    font-size:1.1rem ;
+    text-transform: capitalize;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.3s;
+    color:var(--) ;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+ 
+}
+.contact-container .send:hover{
+    scale: 0.97;
+
+}
+.light .contact-container #email, .light .contact-container #message{
+    background-color: #d1cfcf3d;
+    border: 1px solid rgba(118, 117, 117, 0.249);
+    box-shadow: 1px 1px 1px rgba(216, 215, 215, 0.201);
+    color: black;
+}
+
+.light .contact-container #email:focus, .light .contact-container #message:focus{
+    border: 1px solid rgb(77, 78, 78)
+}
+.light .contact-container #email:hover, .light .contact-container #message:hover{
+    border: 1px solid var(--subtitle)
+}
+
+
+
+@media  (max-width: 550px){
+    .contact-container .contact-animation{
+        display: none;
+    }
+    .contact-container form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+    .contact-container form div.flex{
+       
+        flex-direction: column;
+        align-items: start;
+    
+    }
+    .contact-container #email, .contact-container #message{
+        width: 100%;
+        margin-left: 0;
+        padding:0.5rem 0;
+        margin-top: 0.9rem;
+    }
+    .contact-container .send{
+        width: 30%;
+        align-self: center;
+
+    }
+
+
+
+}
+
+@media  (max-width: 1200px){
+    .contact-container .contact-animation .send-animation{
+        display: none;
+    }
+
+}

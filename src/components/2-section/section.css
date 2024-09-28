@@ -1,0 +1,82 @@
+/*content of this styleSheet
+
+---------------------------------
+1-main section
+2-left section
+3-right section
+4- links in icons should be added
+
+*/
+
+
+
+.my-Section{
+    margin-top: 3rem;
+}
+.my-Section .left-section{
+    flex-grow:1
+}
+.my-Section .avatar{
+    align-items: end;
+    gap: 0.6rem;
+
+}
+.my-Section .avatar .logo{
+    width:80px;
+    border-radius: 50%;
+    border:1px solid var(--hoverC) ;
+    padding:1px;
+   
+
+}
+.my-Section .avatar .icon-verified{
+    color:var(--blue);
+    margin-bottom: 0.3rem;
+   font-size: 1.1rem;
+}
+
+.my-Section .title{
+    font-size: 2.85rem;
+    line-height: 3.5rem;
+    margin: 20px 0;
+    color:var(--title)
+
+}
+.my-Section .subTitle{
+     font-size: 0.87rem;
+     color:var(--subtitle);
+     line-height: 1.3rem ;
+     margin-bottom:20px ;
+
+
+}
+
+
+
+.my-Section .icons-container  {
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    color:var(--subtitle);
+}
+.my-Section .icons-container .icon {
+
+    color:var(--subtitle);
+}
+.my-Section .icons-container .icon:hover {
+    gap: 1.5rem;
+    font-size: 1.4rem;
+    color:var(--iconH);
+    transition:0.3s;
+    cursor: pointer;
+
+
+}
+.animation{
+    width: 100%;
+    translate: 100px 55px;
+}
+@media  (max-width: 1200px){
+.animation{
+    display: none;
+}
+    }
